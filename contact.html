@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Talha is Alive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url("download (1).jpeg")center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    nav {
+      position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 3;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    nav a:hover { color: #aaa; }
+    .overlay {
+      position: absolute; top: 0; left: 0;
+      height: 100%; width: 100%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+      z-index: 1;
+    }
+    .content {
+      position: relative; z-index: 2;
+      height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 20px;
+    }
+    .logo {
+      font-size: 4em;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ff914d, #fcb045, #fddd68);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+    input, textarea {
+      width: 100%; margin: 10px 0;
+      padding: 10px; border: none;
+      border-radius: 5px; font-size: 1em;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #ff914d;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .quote { margin-top: 20px; font-style: italic; font-size: 1em; color: #ccc; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 align="center" style="color: #EBA026">INBOX ME ?</h1>
+    <form action="https://formspree.io/f/xpwlzyew" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>WhatsApp: +923106669390<br>
+       TikTok: @Talha_haseeb_<br>
+       Email: Framesbytalha@gmail.com</p>
+    <div class="quote" style="color: steelblue" align="center">“There are encounters that change our lives.”</div>
+  </div>
+</body>
+</html>

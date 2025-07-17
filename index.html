@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talha is Alive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    #bgVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff914d;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.8));
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo {
+      font-size: 4em;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ff914d, #fcb045, #fddd68);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #eeeeee;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.1em;
+      color: #d8d8d8;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .quote {
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.85em;
+      z-index: 2;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .links a {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+<body background="../../Downloads/photoholgic-LKM_-dS9VQ8-unsplash.jpg" style="align-content: center"
+
+  
+  <!-- Overlay for darkening the video -->
+  <div class="overlay"></div>
+</body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="logo">Talha is Alive</div>
+    <h2>Welcome to the Age Of Reason </h2>
+    <p>Bringing creative stories, unique content, and real moments. Join me on YouTube and TikTok as we build something extraordinary.</p>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@TalhaisAlive" target="_blank">YouTube Channel</a>
+      <a href="https://www.tiktok.com/@Talha_haseeb_" target="_blank">Follow on TikTok</a>
+    </div>
+
+    <div class="quote">"ہم سفر چاہیے ہجوم نہیں، اک مسافر بھی قافلہ ہے مجھے"</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Talha is Alive. All rights reserved.
+  </footer>
+
+</body>
+</html>
