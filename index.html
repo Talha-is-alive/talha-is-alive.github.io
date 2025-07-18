@@ -6,7 +6,7 @@
   <title>Talha is Alive</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * {
+    * { 
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -16,17 +16,12 @@
       height: 100%;
       font-family: 'Inter', sans-serif;
       color: #ffffff;
-      overflow: hidden;
-    }
-
-    #bgVideo {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -2;
+      background-image: url("Talha is alive/1127506.jpg"); /* ✅ Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-y: auto; /* ✅ Allow scrolling */
     }
 
     nav {
@@ -66,7 +61,7 @@
     .content {
       position: relative;
       z-index: 2;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -128,12 +123,10 @@
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
       text-align: center;
       color: #aaa;
       font-size: 0.85em;
+      padding: 20px 0;
       z-index: 2;
     }
 
@@ -168,13 +161,11 @@
     }
   </style>
 </head>
-<body>
-<body background="1127506.jpg" 
 
-  
-  <!-- Overlay for darkening the video -->
+<body>
+  <!-- Overlay for darkening -->
   <div class="overlay"></div>
-</body>
+
   <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
@@ -185,7 +176,7 @@
   <!-- Main Content -->
   <div class="content">
     <div class="logo">Talha is Alive</div>
-    <h2>Welcome to the Age Of Reason </h2>
+    <h2>Welcome to the Age Of Reason</h2>
     <p>Bringing creative stories, unique content, and real moments. Join me on YouTube and TikTok as we build something extraordinary.</p>
 
     <div class="links">
@@ -200,6 +191,5 @@
   <footer>
     &copy; 2025 Talha is Alive. All rights reserved.
   </footer>
-
 </body>
 </html>
